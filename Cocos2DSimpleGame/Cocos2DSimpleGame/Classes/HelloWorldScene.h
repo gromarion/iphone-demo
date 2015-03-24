@@ -22,6 +22,7 @@
 
 + (HelloWorldScene *)scene;
 - (id)init;
+- (void) addGhost:(CCTime)dt;
 
 // -----------------------------------------------------------------------
 @end

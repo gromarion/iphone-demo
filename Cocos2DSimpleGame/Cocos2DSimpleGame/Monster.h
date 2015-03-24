@@ -10,4 +10,6 @@
 
 @interface Monster : CCSprite
 
+@property (nonatomic) int y_value;
+
 @end

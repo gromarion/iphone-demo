@@ -7,25 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <stdlib.h>
 #import "cocos2d.h"
 #import "Monster.h"
 
 @implementation Monster
 
-- (id)init
-{
-//    CGSize screen = [[CCDirector sharedDirector] winSize];
-    if( (self = [super init]) )
-    {
-        //CGSize screenSize = [CCDirector sharedDirector].winSize;
-        [super ]
-    }
-    return self;
-}
-
 - (void) update:(CCTime)delta
 {
-    self.position = ccp(self.position.x - 0.01*delta, self.position.y);
+    int step = 100;
+    self.position = ccp(self.position.x - step*delta, self.position.y - _y_value*delta);
+    if (arc4random() % 10 == 0) {
+        int lowerBound = -step;
+        int upperBound = step;
+        _y_value = lowerBound + arc4random() % (upperBound - lowerBound);
+    }
 }
 
 @end

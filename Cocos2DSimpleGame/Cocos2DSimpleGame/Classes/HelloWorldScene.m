@@ -77,37 +77,45 @@
 }
 
 - (void)addMonster:(CCTime)dt {
+
+    [self addGhost:dt];
+}
+
+- (void)addGhost:(CCTime)dt {
+    Monster *monster = [Monster spriteWithImageNamed:@"monster.png"];
     
-    Monster *monster = [Monster]
-    Monster *monster = [[Monster alloc] init];
-    CCTexture* texture = [CCTexture textureWithFile:@"monster.png"];
-    [monster setTexture: texture];
-    
-    monster.position = ccp(480, 320);
-//    
-//    // 1
-//    int minY = monster.contentSize.height / 2;
-//    int maxY = self.contentSize.height - monster.contentSize.height / 2;
-//    int rangeY = maxY - minY;
-//    int randomY = (arc4random() % rangeY) + minY;
-//    
-//    // 2
+    // 1
+    int minY = monster.contentSize.height / 2;
+    int maxY = self.contentSize.height - monster.contentSize.height / 2;
+    int rangeY = maxY - minY;
+    int randomY = (arc4random() % rangeY) + minY;
+    monster.position = ccp(self.contentSize.width, randomY);
+    //
+    //    // 1
+    //    int minY = monster.contentSize.height / 2;
+    //    int maxY = self.contentSize.height - monster.contentSize.height / 2;
+    //    int rangeY = maxY - minY;
+    //    int randomY = (arc4random() % rangeY) + minY;
+    //
+    //    // 2
     
     monster.physicsBody = [CCPhysicsBody bodyWithRect:(CGRect){CGPointZero, monster.contentSize} cornerRadius:0];
     monster.physicsBody.collisionGroup = @"monsterGroup";
     monster.physicsBody.collisionType  = @"monsterCollision";
     [_physicsWorld addChild:monster];
-//
-//    // 3
-//    int minDuration = 2.0;
-//    int maxDuration = 4.0;
-//    int rangeDuration = maxDuration - minDuration;
-//    int randomDuration = (arc4random() % rangeDuration) + minDuration;
-//    
+    [monster]
+    
+    //
+    //    // 3
+    //    int minDuration = 2.0;
+    //    int maxDuration = 4.0;
+    //    int rangeDuration = maxDuration - minDuration;
+    //    int randomDuration = (arc4random() % rangeDuration) + minDuration;
+    //
     // 4
-//    CCAction *actionMove = [CCActionMoveTo actionWithDuration:randomDuration position:CGPointMake(-monster.contentSize.width/2, randomY)];
-//    CCAction *actionRemove = [CCActionRemove action];
-//    [monster runAction:[CCActionSequence actionWithArray:@[actionMove,actionRemove]]];
+    //    CCAction *actionMove = [CCActionMoveTo actionWithDuration:randomDuration position:CGPointMake(-monster.contentSize.width/2, randomY)];
+    //    CCAction *actionRemove = [CCActionRemove action];
+    //    [monster runAction:[CCActionSequence actionWithArray:@[actionMove,actionRemove]]];
 }
 
 // -----------------------------------------------------------------------
