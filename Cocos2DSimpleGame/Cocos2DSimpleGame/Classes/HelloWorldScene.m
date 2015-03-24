@@ -78,6 +78,7 @@
 
 - (void)addMonster:(CCTime)dt {
     
+    Monster *monster = [Monster]
     Monster *monster = [[Monster alloc] init];
     CCTexture* texture = [CCTexture textureWithFile:@"monster.png"];
     [monster setTexture: texture];

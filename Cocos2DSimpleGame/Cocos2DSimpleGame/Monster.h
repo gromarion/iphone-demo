@@ -10,5 +10,4 @@
 
 @interface Monster : CCSprite
 
-
 @end
