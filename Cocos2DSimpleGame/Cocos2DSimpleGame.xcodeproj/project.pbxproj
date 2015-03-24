@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		479143E31ABCE10700E46B2D /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = 479143E21ABCE10700E46B2D /* Monster.m */; };
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 		5B09A967188B330300E8F2B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B09A966188B330300E8F2B7 /* QuartzCore.framework */; };
 		5B09A969188B330300E8F2B7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B09A968188B330300E8F2B7 /* OpenGLES.framework */; };
 		5B09A96B188B330300E8F2B7 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B09A96A188B330300E8F2B7 /* OpenAL.framework */; };
@@ -246,8 +249,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		479143E11ABCE06C00E46B2D /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
 		479143E21ABCE10700E46B2D /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 		5B09A963188B330300E8F2B7 /* Cocos2DSimpleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocos2DSimpleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B09A966188B330300E8F2B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5B09A968188B330300E8F2B7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1612,8 +1618,11 @@
 				5B09AC1F188B330600E8F2B7 /* LightBulb.m */,
 				5B09AC21188B330600E8F2B7 /* Rope.h */,
 				5B09AC22188B330600E8F2B7 /* Rope.m */,
+<<<<<<< HEAD
 				479143E11ABCE06C00E46B2D /* Monster.h */,
 				479143E21ABCE10700E46B2D /* Monster.m */,
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1769,7 +1778,10 @@
 			files = (
 				5B09AA15188B330400E8F2B7 /* CCParticleBatchNode.m in Sources */,
 				5B09AB8D188B330500E8F2B7 /* CCBReader.m in Sources */,
+<<<<<<< HEAD
 				479143E31ABCE10700E46B2D /* Monster.m in Sources */,
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 				5B09AB3D188B330500E8F2B7 /* CCButton.m in Sources */,
 				5B09AAE8188B330500E8F2B7 /* OALAudioActions.m in Sources */,
 				5B09AB2D188B330500E8F2B7 /* NSMutableArray+WeakReferences.m in Sources */,
@@ -2107,7 +2119,10 @@
 				5B09AC38188B330600E8F2B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 		};
 		5B09AC39188B330600E8F2B7 /* Build configuration list for PBXNativeTarget "Cocos2DSimpleGame" */ = {
 			isa = XCConfigurationList;
@@ -2116,7 +2131,10 @@
 				5B09AC3B188B330600E8F2B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> 3c6adf6d36109e653a0d11753ba38def83b70923
 		};
 /* End XCConfigurationList section */
 	};
