@@ -11,5 +11,8 @@
 @interface Monster : CCSprite
 
 @property (nonatomic) int y_value;
+@property (nonatomic) int shell_radius;
+
++(Monster*)spriteWithImageNamed:(NSString*)name;
 
 @end

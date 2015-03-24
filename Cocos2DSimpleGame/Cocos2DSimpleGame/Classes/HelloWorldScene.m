@@ -103,7 +103,6 @@
     monster.physicsBody.collisionGroup = @"monsterGroup";
     monster.physicsBody.collisionType  = @"monsterCollision";
     [_physicsWorld addChild:monster];
-    [monster]
     
     //
     //    // 3
@@ -183,6 +182,12 @@
 
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair monsterCollision:(CCNode *)monster projectileCollision:(CCNode *)projectile {
     [monster removeFromParent];
+    [projectile removeFromParent];
+    return YES;
+}
+
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair shellCollision:(CCNode *)shell projectileCollision:(CCNode *)projectile {
+    [shell removeFromParent];
     [projectile removeFromParent];
     return YES;
 }
